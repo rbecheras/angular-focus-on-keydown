@@ -8,8 +8,8 @@
 
 (function(){
 'use strict';
-  
-    angular.module('focusOnKeydown').directive('focusOnKeydown', function($window) {
+
+    angular.module('focusOnKeydown',[]).directive('focusOnKeydown', function($window) {
       function isFocus(element){
         return element[0] === document.activeElement;
       }
