@@ -1,0 +1,22 @@
+{
+  "name": "angular-focus-on-keydown",
+  "version": "0.1.0",
+  "authors": [
+    "Rémi Becheras <rbecheras@sirap.fr>"
+  ],
+  "description": "An Angular.js module that provide a directive to focus an input on a configurable keydown combination.",
+  "main": "angular-focus-on-keydown.js",
+  "keywords": [
+    "bower",
+    "component",
+    "angular","angular.js","directive","focus","input"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
