@@ -37,7 +37,6 @@
         restrict: 'A',
         link: function(scope, elem, attrs) {
           $window.onkeydown = function(e){
-            console.log(e,attrs.focusOnKeydown);
             if (validateSymbols(e, attrs.focusOnKeydown.split('+'))) {
               if (!isFocus(elem)) {
                 e.preventDefault();
