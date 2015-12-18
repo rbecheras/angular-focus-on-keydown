@@ -4,12 +4,19 @@ module.exports = function (grunt) {
 
     grunt.initConfig({
       jshint: {
-        all: ['gruntfile.js', 'angular-focus-on-keydown.js']
+        all: ['gruntfile.js', 'src/angular-focus-on-keydown.js']
+      },
+      ngAnnotate: {
+        dist: {
+          files: {
+            'dist/angular-focus-on-keydown.js': 'src/angular-focus-on-keydown.js'
+          }
+        }
       },
       uglify: {
         dist: {
           files: {
-            'angular-focus-on-keydown.min.js': ['angular-focus-on-keydown.js']
+            'dist/angular-focus-on-keydown.min.js': ['dist/angular-focus-on-keydown.js']
           }
         }
       },
@@ -33,5 +40,5 @@ module.exports = function (grunt) {
       },
     });
 
-    grunt.registerTask('default', ['jshint','uglify']);
+    grunt.registerTask('default', ['jshint','ngAnnotate','uglify']);
 };
