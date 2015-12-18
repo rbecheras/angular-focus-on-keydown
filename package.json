@@ -1,6 +1,6 @@
 {
   "name": "angular-focus-on-keydown",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "An Angular.js module that provide a directive to focus an input on a configurable keydown combination.",
   "main": "angular-focus-on-keydown.js",
   "devDependencies": {
